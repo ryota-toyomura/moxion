@@ -1,0 +1,17 @@
+@use "../../Global/mixin" as mix;
+@use "../../Global/variable" as val;
+
+.p-concept-bg {
+    background-image: url(../images/concept/conceptBg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.p-conceptEnergy-top {
+    padding-top: 190px;
+    @include mix.flex;
+}
+
+.p-conceptEnergy-bottom {
+    padding-top: 115px;
+}

@@ -1,0 +1,21 @@
+@use "../../Global/variable" as val;
+
+.c-commonTitle {
+    line-height: 30px;
+    font-size: val.$titleSize-common-pc;
+    color: val.$titleColor;
+}
+
+.c-contactTitle {
+    font-size: val.$titleSize-contact-pc;
+    color: val.$titleColor;
+}
+
+.c-subTitle {
+    color: val.$textColor-r;
+    font-size: val.$titleSize-sub;
+}
+
+.c-sectionTitle {
+    color: val.$textColor-r;
+}

@@ -1,0 +1,54 @@
+@use "../Global/mixin" as mix;
+
+.l-footer {
+    &__bg {
+        background-color: #B8B298;
+        padding: 45px 0;
+        margin-bottom: 70px;
+    }
+
+    &__lists {
+        @include mix.flex;
+        align-items: center;
+    }
+
+    &__item {
+        color: #fff;
+        border-right: 1px solid #fff;
+    }
+
+    &__item:nth-child(1) {
+        border-left: 1px solid #fff;
+    }
+
+    &__link {
+        padding: 0 50px;
+        font-size: 0.85rem;
+    }
+
+    &__logos {
+        @include mix.flex;
+    }
+
+    &__logo {
+        border-left: 2px solid #999999;
+        height: 115px;
+    }
+
+    &__logoLink {
+        padding: 0 55px;
+        height: 115px;
+        display: block;
+    }
+
+    &__logoImg--bottom {
+        margin-top: 45px;
+    }
+
+    &__copy {
+        text-align: center;
+        padding: 27px 0;
+        border-top: 1px solid #968C83;
+        margin-top: 50px;
+    }
+}
