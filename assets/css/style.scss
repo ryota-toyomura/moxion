@@ -2,14 +2,14 @@
 @use "Foundation/base";
 
 
+@use "Global/mixin";
+@use "Global/variable";
+
+
 @use "Layout/header";
 @use "Layout/main";
 @use "Layout/footer";
 @use "Layout/container";
-
-
-@use "Global/mixin";
-@use "Global/variable";
 
 
 @use "Object/Component/title";
@@ -23,7 +23,8 @@
 @use "Object/Project/plan";
 @use "Object/Project/equipment";
 @use "Object/Project/gallery";
-@use "Object/Project/property";
+@use "Object/Project/outline";
 
 @use "Object/Utility/margin";
 @use "Object/Utility/text";
+@use "Object/Utility/height";

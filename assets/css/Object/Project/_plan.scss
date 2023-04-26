@@ -1,0 +1,146 @@
+@use "../../Global/mixin" as mix;
+
+.p-plan-bg {
+    background-image: url(../images/plan/planBg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.p-Laout {
+    text-align: center;
+
+    &__heading {
+        padding: 190px 0 80px;
+    }
+}
+
+.p-panorama {
+    position: relative;
+
+    &__card {
+        font-size: 1.4rem;
+        position: absolute;
+        background-color: #968c83;
+        color: #fff;
+        width: 370px;
+        text-align: center;
+        padding: 30px 0;
+        top: -55px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+
+        span {
+            font-size: 0.85rem;
+        }
+    }
+
+    &__area {
+        margin-top: 230px;
+        padding: 190px 2% 130px;
+        background-color: #f2f1ee;
+    }
+
+    &__lists {
+        max-width: 785px;
+        margin-inline: auto;
+        @include mix.flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 45%;
+        margin-bottom: 65px;
+
+        p {
+            margin-top: 10px;
+        }
+    }
+}
+
+.p-room {
+    &__heading {
+        text-align: center;
+        margin-bottom: 110px;
+        margin-top: 400px;
+    }
+
+    &__lists {
+        @include mix.flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 50%;
+        margin-bottom: 85px;
+    }
+
+    &__2F:first-of-type {
+        margin-bottom: 85px;
+    }
+
+    &__2F:nth-of-type(2) {
+        margin-bottom: 220px;
+    }
+}
+
+@media(max-width:850px) {
+    .p-room {
+        &__heading {
+            margin-top: 200px;
+        }
+
+        &__item {
+            margin-bottom: 50px;
+        }
+
+        &__2F:nth-of-type(2) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media(max-width:480px) {
+
+    .p-Laout {
+        &__heading {
+            padding: 85px 0 60px;
+        }
+    }
+
+    .p-panorama {
+        &__lists {
+            flex-direction: column;
+        }
+
+        &__item {
+            width: 90%;
+            margin-inline: auto;
+        }
+
+        &__area {
+            padding: 130px 2% 5px;
+            margin-top: 160px;
+        }
+
+        &__card {
+            font-size: 1.2rem;
+        }
+    }
+
+    .p-room {
+        &__lists {
+            flex-direction: column;
+        }
+
+        &__item {
+            width: 100%;
+            margin-bottom: 35px;
+        }
+
+        &__2F:first-of-type {
+            margin-bottom: 35px;
+        }
+    }
+}

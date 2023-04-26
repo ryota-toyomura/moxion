@@ -1,5 +1,12 @@
 /*common*/
 
+
+
+.l-default-container {
+    max-width: 1920px;
+    margin-inline: auto;
+}
+
 .l-container {
     max-width: 1230px;
     padding-right: 15px;
@@ -7,14 +14,14 @@
     margin-inline: auto;
 }
 
-.l-contactContainer{
+.l-contactContainer {
     max-width: 930px;
     padding-right: 15px;
     padding-left: 15px;
     margin-inline: auto;
 }
 
-.l-subVisual-container{
+.l-subVisual-container {
     max-width: 1030px;
     padding-right: 15px;
     padding-left: 15px;
@@ -23,7 +30,7 @@
 
 /*top*/
 
-.l-mvTxt-container{
+.l-mvTxt-container {
     max-width: 450px;
     margin-inline: auto;
 }
@@ -31,9 +38,49 @@
 
 /* concept */
 
-.l-conceptEnergy-top-container{
+.l-conceptEnergy-top-container {
     max-width: 1350px;
     padding-right: 15px;
     padding-left: 15px;
+    margin-inline: auto;
+}
+
+/*access */
+
+.l-access-container {
+    max-width: 1710px;
+}
+
+/* equipment */
+
+.l-equipment-other-container {
+    max-width: 790px;
+    margin-inline: auto;
+}
+
+/* plan */
+.l-room-container {
+    max-width: 1080px;
+    margin-inline: auto;
+}
+
+/* outline */
+
+.l-outline-container {
+    max-width: 990px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-inline: auto;
+}
+
+.l-information-container {
+    max-width: 1090px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-inline: auto;
+}
+
+.l-thumbnails__container {
+    max-width: 860px;
     margin-inline: auto;
 }

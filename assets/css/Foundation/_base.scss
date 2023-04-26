@@ -1,4 +1,36 @@
+@use "../Global/variable" as val;
+
+html{
+    font-family: val.$gothic;
+    font-weight: bold;
+}
+
 img {
     max-width: 100%;
     object-fit: cover;
+}
+
+picture{
+    width: 100%;
+}
+
+@media (min-width:851px){
+    .tab-appea{
+        display: none;
+    }
+}
+@media (max-width:850px){
+    .tab-none{
+        display: none;
+    }
+}
+@media (min-width:481px){
+    .sp-appea{
+        display: none;
+    }
+}
+@media (max-width:480px){
+    .sp-none{
+        display: none;
+    }
 }

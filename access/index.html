@@ -6,45 +6,50 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
     </head>
 
     <body>
         <header class="l-header">
-            <div class="l-header__inner">
-                <div class="l-header__logo">
-                    <a href="">
-                        <img src="assets/images/common/h-logo.png" alt="">
-                        <span>モクシオン四谷三丁目</span>
+            <div class="l-header__inner l-default-container">
+                <h1 class="l-header__logo">
+                    <a href="../">
+                        <img src="../assets/images/common/h-logo.png" alt="">
+                        <span>モクシオン<br class="sp-appea">四谷三丁目</span>
                     </a>
+                </h1>
+                <div class="l-hum l-menu-middle-appea">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <div class="l-header__menus">
-                    <nav class="l-header__nav">
+                    <nav class="l-header__nav l-menu-middle-none">
                         <ul class="l-header__navLists">
                             <li class="l-header__navItem">
-                                <a href="" class="l-header__navLink">TOP</a>
+                                <a href="../" class="l-header__navLink">TOP</a>
                             </li>
                             <li class="l-header__navItem">
-                                <a href="" class="l-header__navLink">コンセプト</a>
+                                <a href="../concept/" class="l-header__navLink">コンセプト</a>
                             </li>
                             <li class="l-header__navItem">
-                                <a href="" class="l-header__navLink">アクセス</a>
+                                <a href="#" class="l-header__navLink">アクセス</a>
                             </li>
                             <li class="l-header__navItem">
-                                <a href="" class="l-header__navLink">プラン</a>
+                                <a href="../plan/" class="l-header__navLink">プラン</a>
                             </li>
                             <li class="l-header__navItem">
-                                <a href="" class="l-header__navLink">設備</a>
+                                <a href="../equipment/" class="l-header__navLink">設備</a>
                             </li>
                             <li class="l-header__navItem">
-                                <a href="" class="l-header__navLink">ギャラリー</a>
+                                <a href="../gallery/" class="l-header__navLink">ギャラリー</a>
                             </li>
                             <li class="l-header__navItem">
-                                <a href="" class="l-header__navLink">物件概要</a>
+                                <a href="../outline/" class="l-header__navLink">物件概要</a>
                             </li>
                         </ul>
                     </nav>
-                    <div class="l-header__btn">
+                    <div class="l-header__btn l-menu-middle-none">
                         <ul class="l-header__btnLists">
                             <li class="l-header__btnItem">
                                 <a href="" class="l-header__btnLink">デジタルパンフレット</a>
@@ -59,11 +64,73 @@
                     </div>
                 </div>
             </div>
+            <div id="mask"></div>
         </header>
         <main class="l-main">
+            <div class="c-subVisual">
+                <h2 class="c-commonTitle l-subVisual-container">Access<br><span class="c-smallTitle">アクセス</span></h2>
+                <div class="p-access-bg">
+                    <p class="c-subVisual__txt l-subVisual-container">
+                        都市に囲まれた閑静。<br>
+                        四谷三丁目を住みこなす。
+                    </p>
+                </div>
+            </div>
+
+            <section class="p-map">
+                <h2 class="p-map__heading c-common-subTitle">
+                    Area Map<br><span class="c-smallTitle">エリアマップ</span>
+                </h2>
+                <div class="p-map__area">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+            </section>
+            <section class="p-accessDetail">
+                <div class="p-accessDetail__top l-access-container">
+                    <img src="../assets/images/access/access01.png" alt="" class="p-accessDetail__bg">
+                    <div class="p-accessDetail__txts u-text-right">
+                        <div class="p-accessDetail__txtsBg">
+                            <h3 class="p-accessDetail__heading c-underTitle">
+                                新宿・四谷・青山の中間に位置する<br>
+                                丸の内の人気エリア
+                            </h3>
+                            <p class="p-accessDetail__txt">
+                                ターミナル駅である新宿、<br class="sp-appea">駅前開発でさらなる発展をみせる四ツ谷、<br>
+                                人気の青山・外苑前に囲まれた四谷三丁目。<br>
+                                閑静な住宅街を擁するこの街は、<br class="sp-appea">都心利便の高さと落ち着きを併せ持ち<br>
+                                都会を住みこなすハイエンドに<br class="sp-appea">人気の高いロケーションです。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-accessDetail__bottom l-access-container">
+                    <div class="u-text-right">
+                        <img src="../assets/images/access/access02.png" alt="" class="p-accessDetail__bg">
+                    </div>
+                    <div class="p-accessDetail__txts">
+                        <div class="p-accessDetail__txtsBg">
+                            <h3 class="p-accessDetail__heading c-underTitle">
+                                東京メトロ・JRの3駅が使える<br>
+                                都心ならではの好アクセス
+                            </h3>
+                            <p class="p-accessDetail__txt">
+                                東京メトロ丸の内線「四谷三丁目」駅徒歩7分、<br>
+                                JR総武線「信濃町」駅徒歩8分、<br class="sp-appea">大江戸線「国立競技場」駅徒歩13分。<br>
+                                新宿、銀座、東京、霞ヶ関などの<br class="sp-appea">都内主要駅へ15分圏内という<br>
+                                抜群のアクセスが魅力です。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-accessDetail__line">
+                        <img src="../assets/images/access/access03.png" alt="">
+                        <img src="../assets/images/access/access04.png" alt="">
+                    </div>
+                </div>
+            </section>
+
             <section class="p-contact l-contactContainer">
-                <h2 class="p-contact__heading c-subTitle">
-                    Contact<br><span>お問い合わせ</span>
+                <h2 class="p-contact__heading c-common-subTitle">
+                    Contact<br><span class="c-smallTitle">お問い合わせ</span>
                 </h2>
                 <ul class="p-contact__lists">
                     <li class="p-contact__item">
@@ -84,47 +151,48 @@
                 </ul>
             </section>
         </main>
+
         <footer class="l-footer">
             <div class="l-footer__inner">
                 <div class="l-footer__bg">
                     <ul class="l-footer__lists l-container">
                         <li class="l-footer__item">
-                            <a href="" class="l-footer__link">TOP</a>
+                            <a href="../" class="l-footer__link">TOP</a>
                         </li>
                         <li class="l-footer__item">
-                            <a href="" class="l-footer__link">コンセプト</a>
+                            <a href="../concept/" class="l-footer__link">コンセプト</a>
                         </li>
                         <li class="l-footer__item">
-                            <a href="" class="l-footer__link">アクセス</a>
+                            <a href="#" class="l-footer__link">アクセス</a>
                         </li>
                         <li class="l-footer__item">
-                            <a href="" class="l-footer__link">プラン</a>
+                            <a href="../plan/" class="l-footer__link">プラン</a>
                         </li>
                         <li class="l-footer__item">
-                            <a href="" class="l-footer__link">設備</a>
+                            <a href="../equipment/" class="l-footer__link">設備</a>
                         </li>
                         <li class="l-footer__item">
-                            <a href="" class="l-footer__link">ギャラリー</a>
+                            <a href="../gallery/" class="l-footer__link">ギャラリー</a>
                         </li>
                         <li class="l-footer__item">
-                            <a href="" class="l-footer__link">物件概要</a>
+                            <a href="../outline/" class="l-footer__link">物件概要</a>
                         </li>
                     </ul>
                 </div>
                 <ul class="l-footer__logos l-container">
                     <li class="l-footer__logo">
                         <a href="" class="l-footer__logoLink">
-                            <img src="assets/images/common/f-logo01.png" alt="" class="l-footer__logoImg">
+                            <img src="../assets/images/common/f-logo01.png" alt="" class="l-footer__logoImg">
                         </a>
                     </li>
                     <li class="l-footer__logo">
                         <a href="" class="l-footer__logoLink">
-                            <img src="assets/images/common/f-logo02.png" alt="" class="l-footer__logoImg">
+                            <img src="../assets/images/common/f-logo02.png" alt="" class="l-footer__logoImg">
                         </a>
                     </li>
                     <li class="l-footer__logo">
                         <a href="" class="l-footer__logoLink">
-                            <img src="assets/images/common/f-logo03.png" alt=""
+                            <img src="../assets/images/common/f-logo03.png" alt=""
                                 class="l-footer__logoImg l-footer__logoImg--bottom">
                         </a>
                     </li>
@@ -134,6 +202,8 @@
                 <small>© 2023 MITSUIHOME CO.,LTD</small>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+        <script src="../assets/js/script.js"></script>
     </body>
 
 </html>

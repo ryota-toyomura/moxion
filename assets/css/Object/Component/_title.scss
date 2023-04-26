@@ -4,18 +4,38 @@
     line-height: 30px;
     font-size: val.$titleSize-common-pc;
     color: val.$titleColor;
+    font-family: val.$eng;
+    font-weight: 500;
 }
 
-.c-contactTitle {
+.c-common-subTitle {
+    line-height: 30px;
     font-size: val.$titleSize-contact-pc;
     color: val.$titleColor;
+    font-weight: 500;
 }
 
-.c-subTitle {
+.c-smallTitle {
     color: val.$textColor-r;
     font-size: val.$titleSize-sub;
+    font-family: val.$gothic;
+    font-weight: bold;
 }
 
-.c-sectionTitle {
+.c-underTitle {
     color: val.$textColor-r;
+    font-family: val.$mincho;
+    font-size: 1.6rem;
+    line-height: 50px;
+}
+
+@media(max-width:480px) {
+    .c-common-subTitle {
+        font-size: val.$titleSize-contact-sp;
+    }
+
+    .c-smallTitle {
+        font-size: val.$titleSize-sub-sp;
+    }
+
 }

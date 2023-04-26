@@ -1,0 +1,196 @@
+@use "../../Global/mixin" as mix;
+@use "../../Global/variable" as val;
+
+
+.p-outline-bg {
+    background-image: url(../images/outline/outlineBg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.p-outline {
+    &__heading {
+        text-align: center;
+        padding: 200px 0 80px;
+    }
+
+    &__detail {
+        margin-bottom: 240px;
+    }
+
+    &__column {
+        display: flex;
+        border-bottom: 2px dotted #968c83;
+    }
+
+    &__column:first-child {
+        border-top: 2px dotted #968c83;
+    }
+
+    &__dif {
+        width: 40%;
+        padding: 15px 0 15px 25px;
+        background-color: #e8e6df;
+        color: val.$textColor-r;
+        font-family: val.$mincho ;
+    }
+
+    &__explain {
+        width: 60%;
+        padding: 15px 0 15px 25px;
+    }
+}
+
+.p-information {
+    background-color: #f9f8f6;
+
+    &__heading {
+        padding: 220px 0 125px;
+        text-align: center;
+    }
+
+    &__lists {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        width: 33%;
+        padding-bottom: 50px;
+    }
+
+    &__details {
+        @include mix.flex;
+        flex-wrap: wrap;
+        padding-bottom: 175px;
+    }
+
+    &__detail {
+        width: 45%
+    }
+
+    &__detail:nth-child(3) {
+        margin-top: 70px;
+    }
+
+    &__detail:nth-child(4) {
+        margin-top: 30px;
+    }
+
+    &__detail:nth-child(5) {
+        margin-top: -50px;
+    }
+
+    &__dlHeading {
+        font-family: val.$mincho ;
+        color: val.$textColor-r;
+        font-size: 1.7rem;
+        margin-bottom: 30px
+    }
+
+    &__column {
+        @include mix.flex;
+        align-items: center;
+        border-bottom: 2px dotted #968c83;
+    }
+
+    &__column:first-child {
+        border-top: 2px dotted #968c83;
+    }
+
+    &__dif {
+        width: 60%;
+        padding: 10px 0;
+    }
+
+    &__explain {
+        width: 40%;
+        padding: 15px 0;
+        text-align: right;
+    }
+}
+
+@media (max-width:850px) {
+    .p-information {
+        &__item {
+            width: 31%;
+            margin: 1%;
+            text-align: center;
+        }
+
+        &__details {
+            flex-direction: column;
+            padding-bottom: 90px;
+        }
+
+        &__detail {
+            width: 90%;
+            margin-inline: auto;
+            margin-bottom: 50px;
+        }
+
+        &__detail:nth-child(3) {
+            margin-top: 0;
+        }
+
+        &__detail:nth-child(4) {
+            margin-top: 0;
+        }
+
+        &__detail:nth-child(5) {
+            margin-top: 0;
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .p-outline {
+        &__heading {
+            text-align: center;
+            padding: 80px 0 65px;
+        }
+
+        &__detail {
+            margin-bottom: 100px;
+        }
+
+        &__column {
+            font-size: 0.9rem;
+        }
+
+        &__dif {
+            padding: 15px 0 15px 15px;
+            width: 25%;
+        }
+
+        &__explain {
+            width: 75%;
+            padding: 15px 0 15px 15px;
+        }
+    }
+
+    .p-information {
+        &__details {
+            padding-bottom: 50px;
+        }
+
+        &__heading {
+            padding: 80px 0 70px;
+            text-align: center;
+        }
+
+        &__detail {
+            width: 97%;
+        }
+
+        &__dlHeading {
+            font-size: 1.2rem;
+        }
+
+        &__column {
+            font-size: 0.8rem;
+        }
+    }
+}

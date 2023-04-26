@@ -1,7 +1,18 @@
+/*common*/
+
 $titleColor: #666666;
 $textColor-r: #A6192E;
-$titleSize-common-pc:4.5rem;
-$titleSize-common-sp:1rem;
-$titleSize-contact-pc:3rem;
-$titleSize-contact-sp:1rem;
-$titleSize-sub:1rem;
+$titleSize-common-pc: 4.5rem;
+$titleSize-common-sp: 1rem;
+$titleSize-contact-pc: 3rem;
+$titleSize-contact-sp: 8vw;
+$titleSize-sub: 1rem;
+$titleSize-sub-sp: 4.5vw;
+
+/* font */
+
+$gothic :"Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+$mincho :"Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+$eng :"Verdana", serif;
+
+

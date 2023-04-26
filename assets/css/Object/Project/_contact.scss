@@ -3,7 +3,6 @@
 .p-contact {
 
     &__heading {
-        line-height: 30px;
         text-align: center;
         margin: 165px 0 65px;
     }
@@ -15,7 +14,6 @@
     }
 
     &__item {
-        padding: 25px 0;
         width: 285px;
         text-align: center;
         font-size: 0.8rem;
@@ -35,4 +33,32 @@
         color: #A6192E;
         margin-left: 15px;
     }
+
+    &__link {
+        display: block;
+        padding: 25px 0;
+    }
 }
+
+@media(max-width:480px){
+    .p-contact{
+        &__heading{
+            margin: 40px 0 50px;
+        }
+        &__lists{
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        &__item{
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            margin-bottom: 20px;
+            width: 170px;
+            font-size: 0.7rem;
+        }
+        &__link{
+            padding: 15px 0;
+        }
+    }
+}
+

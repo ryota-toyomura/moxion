@@ -1,0 +1,25 @@
+@use "../../Global/mixin" as mix;
+@use "../../Global/variable" as val;
+
+.p-gallery-bg {
+    background-image: url(../images/gallery/gallery.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.p-slide {
+    background-color: #f9f8f6;
+    padding: 200px 0 100px;
+    background-position: center;
+    background-size: cover;
+
+    &__main {
+        background-image: url(../images/gallery/gallery_bg.png);
+        padding: 100px 0;
+    }
+
+    &__thumbnails{
+        margin-top: 50px;
+        overflow-x: hidden;
+    }
+}

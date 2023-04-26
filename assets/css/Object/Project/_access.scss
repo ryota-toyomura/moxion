@@ -1,0 +1,146 @@
+@use "../../Global/mixin" as mix;
+@use "../../Global/variable" as val;
+
+.p-access-bg {
+    background-image: url(../images/access/accessBg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.p-map {
+    background-color: #f9f8f6;
+    &__heading {
+        font-weight: 500;
+        text-align: center;
+        padding: 200px 0 75px;
+    }
+
+    &__area {
+        padding-bottom: 170px;
+    }
+}
+
+.p-accessDetail {
+    &__heading {
+        color: val.$textColor-r;
+        font-size: 1.6rem;
+        line-height: 40px;
+        margin-bottom: 40px;
+        max-width: 540px;
+    }
+
+    &__bg {
+        height: 390px;
+    }
+
+    &__txtsBg {
+        display: inline-block;
+        background-color: #dfdcd4;
+        margin-top: -210px;
+        width: 44.5%;
+        padding: 100px 2% 100px 9%;
+    }
+
+    &__txt {
+        line-height: 33px;
+        max-width: 540px;
+        font-size: 0.85rem;
+    }
+
+    &__top {
+        margin:180px 0 200px;
+    }
+
+    &__bottom {
+        margin-left: auto;
+    }
+
+    &__line {
+        margin-top: -320px;
+        margin-left: 105px;
+        padding-bottom: 210px;
+        display: flex;
+        align-items: baseline;
+
+        img:nth-child(1) {
+            padding-bottom: 35px;
+            margin-right: 135px;
+            width: 20%;
+        }
+
+        img:nth-child(2) {
+            padding-bottom: 25px;
+            width: 55%;
+        }
+    }
+}
+
+@media(max-width:1440px) {
+    .p-accessDetail {
+        &__txtsBg {
+            padding: 80px 2%;
+        }
+
+        &__line {
+            margin-top: -285px;
+            margin-left: 30px;
+        }
+    }
+}
+
+@media(max-width:850px) {
+    .p-accessDetail {
+        &__txtsBg {
+            width: 80%;
+        }
+
+        &__top {
+            margin: 130px 0;
+        }
+
+        &__line {
+            margin-top: -80px;
+            margin-left: 30px;
+            padding-bottom: 0;
+
+            img:nth-child(1) {
+                margin-right: 0;
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media(max-width:480px) {
+    .p-accessDetail {
+        &__heading {
+            font-size: 1.2rem;
+            line-height: 35px;
+            margin-bottom: 15px;
+        }
+        &__bg {
+            height: 315px;
+        }
+
+        &__top {
+            margin: 70px 0;
+        }
+
+        &__txt {
+            font-size: 0.8rem;
+        }
+
+        &__txtsBg {
+            padding: 45px 2%;
+        }
+
+        &__line {
+            margin-top: -30px;
+            margin-left: 10px;
+
+            img:nth-child(2) {
+                width: 65%;
+            }
+        }
+    }
+}

@@ -1,0 +1,144 @@
+@use "../../Global/mixin" as mix;
+@use "../../Global/variable" as val;
+
+.p-equipment {
+    background-color: #f9f8f6;
+    padding: 240px 0;
+}
+
+.p-equipment-bg {
+    background-image: url(../images/equipment/equipmentBg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.p-equipment-private {
+    background-color: #7e7f74;
+}
+
+.p-equipment-common {
+    background-color: #968c83;
+}
+
+.p-equipment-contents {
+    background-color: #fff;
+    position: relative;
+    padding: 145px 105px 35px;
+
+    &__heading {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 370px;
+        margin-inline: auto;
+        margin-top: -15px;
+        text-align: center;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    &__lists {
+        @include mix.flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 28%;
+        margin-bottom: 80px;
+
+        h3 {
+            font-family: val.$mincho ;
+            color: #968c83;
+            margin: 25px 0;
+            font-size: 1.2rem;
+        }
+
+        p {
+            line-height: 28px;
+            font-size: 0.88rem;
+        }
+    }
+}
+
+.p-equipment-other {
+    @include mix.flex;
+    margin-bottom: 80px;
+
+    &__item {
+        width: 47%;
+
+        h3 {
+            font-family: val.$mincho ;
+            color: #968c83;
+            line-height: 25px;
+            margin-top: 20px;
+            font-size: 1.2rem;
+
+            span {
+                font-size: 0.88rem;
+            }
+        }
+    }
+}
+
+.p-equipment-contents:nth-of-type(1) {
+    margin-bottom: 200px;
+}
+
+@media(max-width:850px) {
+    .p-equipment-contents {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
+@media(max-width:480px) {
+    .p-equipment {
+        background-color: #f9f8f6;
+        padding: 80px 0;
+    }
+
+    .p-equipment-contents {
+        padding-top: 85px;
+        padding-right: 2%;
+        padding-left: 2%;
+
+        &__lists {
+            flex-direction: column;
+        }
+
+        &__item {
+            width: 85%;
+            margin-inline: auto;
+            margin-bottom: 40px;
+            img{
+                width: 100%;
+            }
+
+            h3 {
+                margin: 20px 0 10px;
+                font-size: 1.1rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .p-equipment-contents:nth-of-type(1) {
+        margin-bottom: 115px;
+    }
+    .p-equipment-other{
+        margin-bottom: 40px;
+        flex-direction: column;
+        &__item{
+            width: 85%;
+            margin-inline: auto;
+            margin-bottom: 40px;
+        }
+        &__item:nth-child(2){
+            margin-bottom: 0;
+        }
+    }
+}

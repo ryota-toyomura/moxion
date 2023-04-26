@@ -1,0 +1,9 @@
+.u-height {
+    height: 450px;
+}
+
+@media(max-width:480px) {
+    .u-height {
+        height: 200px;
+    }
+}

@@ -10,41 +10,47 @@
     </head>
 
     <body>
+
         <header class="l-header">
-            <div class="l-header__inner">
+            <div class="l-header__inner l-default-container">
                 <h1 class="l-header__logo">
-                    <a href="">
+                    <a href="#">
                         <img src="assets/images/common/h-logo.png" alt="">
-                        <span>モクシオン四谷三丁目</span>
+                        <span>モクシオン<br class="sp-appea">四谷三丁目</span>
                     </a>
                 </h1>
+                <div class="l-hum l-menu-middle-appea">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="l-header__menus">
-                    <nav class="l-header__nav">
+                    <nav class="l-header__nav l-menu-middle-none">
                         <ul class="l-header__navLists">
                             <li class="l-header__navItem">
-                                <a href="" class="l-header__navLink">TOP</a>
+                                <a href="#" class="l-header__navLink">TOP</a>
                             </li>
                             <li class="l-header__navItem">
-                                <a href="" class="l-header__navLink">コンセプト</a>
+                                <a href="concept/" class="l-header__navLink">コンセプト</a>
                             </li>
                             <li class="l-header__navItem">
-                                <a href="" class="l-header__navLink">アクセス</a>
+                                <a href="access/" class="l-header__navLink">アクセス</a>
                             </li>
                             <li class="l-header__navItem">
-                                <a href="" class="l-header__navLink">プラン</a>
+                                <a href="plan/" class="l-header__navLink">プラン</a>
                             </li>
                             <li class="l-header__navItem">
-                                <a href="" class="l-header__navLink">設備</a>
+                                <a href="equipment/" class="l-header__navLink">設備</a>
                             </li>
                             <li class="l-header__navItem">
-                                <a href="" class="l-header__navLink">ギャラリー</a>
+                                <a href="gallery/" class="l-header__navLink">ギャラリー</a>
                             </li>
                             <li class="l-header__navItem">
-                                <a href="" class="l-header__navLink">物件概要</a>
+                                <a href="outline/" class="l-header__navLink">物件概要</a>
                             </li>
                         </ul>
                     </nav>
-                    <div class="l-header__btn">
+                    <div class="l-header__btn l-menu-middle-none">
                         <ul class="l-header__btnLists">
                             <li class="l-header__btnItem">
                                 <a href="" class="l-header__btnLink">デジタルパンフレット</a>
@@ -59,6 +65,7 @@
                     </div>
                 </div>
             </div>
+            <div id="mask"></div>
         </header>
         <main class="l-main">
             <div class="p-mainVisual">
@@ -92,14 +99,16 @@
                 <div class="p-indexCommon__inner">
                     <div class="p-indexConcept__contents l-container">
                         <h2 class="p-indexCommon__heading c-commonTitle">Concept<br><span
-                                class="c-subTitle">コンセプト</span></h2>
+                                class="c-smallTitle">コンセプト</span></h2>
                         <p class="p-indexCommon__txt p-indexCommon__txt--left">利便も、快適も、サステナブルも。<br>「木造マンション」という新提案。</p>
 
                         <div class="p-indexCommon__foot">
-                            <img src="assets/images/top/concept02.png" alt="" class="u-index-mr">
-                            <a href="" class="p-indexCommon__detail">詳しく見る<img src="assets/images/top/arrow.png" alt=""></a>
+                            <img src="assets/images/top/concept02.png" alt="" class="p-indexCommon__footImg u-index-mr">
+                            <a href="concept/" class="p-indexCommon__detail">詳しく見る<img src="assets/images/top/arrow.png"
+                                    alt=""></a>
                         </div>
-                        <img src="assets/images/top/concept01.png" alt="" class="p-indexConcept__img01">
+                        <img src="assets/images/top/concept01.png" alt=""
+                            class="p-indexConcept__img01 p-index-topImg01">
                     </div>
                     <img src="assets/images/top/conceptBg.png" alt="" class="p-indexCommon__bg p-indexConcept__bg">
                 </div>
@@ -111,15 +120,17 @@
                     <div class="p-indexConcept__contents l-container">
                         <div class="p-indexAccess__headgl">
                             <h2 class="p-indexCommon__heading p-indexAccess__heading c-commonTitle">Access<br><span
-                                    class="c-subTitle">アクセス</span></h2>
+                                    class="c-smallTitle">アクセス</span></h2>
                         </div>
-                        <p class="p-indexCommon__txt p-indexCommon__txt--right p-indexAccess__txt">利便も、快適も、サステナブルも。<br>「木造マンション」という新提案。</p>
+                        <p class="p-indexCommon__txt p-indexCommon__txt--right p-indexAccess__txt">
+                            利便も、快適も、サステナブルも。<br>「木造マンション」という新提案。</p>
 
                         <div class="p-indexCommon__foot p-indexAccess__foot">
-                            <a href="" class="p-indexCommon__detail u-text-left u-index-mr">詳しく見る<img src="assets/images/top/arrow.png" alt=""></a>
-                            <img src="assets/images/top/access02.png" alt="">
+                            <a href="access/" class="p-indexCommon__detail u-text-left u-index-mr">詳しく見る<img
+                                    src="assets/images/top/arrow.png" alt=""></a>
+                            <img src="assets/images/top/access02.png" alt="" class="p-indexCommon__footImg">
                         </div>
-                        <img src="assets/images/top/access01.png" alt="" class="p-indexAccess__img01">
+                        <img src="assets/images/top/access01.png" alt="" class="p-indexAccess__img01 p-index-topImg02">
                     </div>
                     <img src="assets/images/top/accessBg.png" alt="" class="p-indexCommon__bg p-indexAccess__bg">
                 </div>
@@ -128,23 +139,24 @@
             <section class="p-indexCommon p-indexPlan">
                 <div class="p-indexCommon__inner">
                     <div class="p-indexConcept__contents l-container">
-                        <h2 class="p-indexCommon__heading c-commonTitle">Concept<br><span
-                                class="c-subTitle">コンセプト</span></h2>
+                        <h2 class="p-indexCommon__heading c-commonTitle">Plan<br><span class="c-smallTitle">プラン</span>
+                        </h2>
                         <p class="p-indexCommon__txt p-indexCommon__txt--left">利便も、快適も、サステナブルも。<br>「木造マンション」という新提案。</p>
 
                         <div class="p-indexCommon__foot">
-                            <img src="assets/images/top/plan02.png" alt="" class="u-index-mr">
-                            <a href="" class="p-indexCommon__detail">詳しく見る<img src="assets/images/top/arrow.png" alt=""></a>
+                            <img src="assets/images/top/plan02.png" alt="" class="p-indexCommon__footImg u-index-mr">
+                            <a href="plan/" class="p-indexCommon__detail">詳しく見る<img src="assets/images/top/arrow.png"
+                                    alt=""></a>
                         </div>
-                        <img src="assets/images/top/plan01.png" alt="" class="p-indexPlan__img01">
+                        <img src="assets/images/top/plan01.png" alt="" class="p-indexPlan__img01 p-index-topImg01">
                     </div>
                     <img src="assets/images/top/planBg.png" alt="" class="p-indexCommon__bg p-indexPlan__bg">
                 </div>
             </section>
 
             <section class="p-contact l-contactContainer">
-                <h2 class="p-contact__heading c-contactTitle">
-                    Contact<br><span class="c-subTitle">お問い合わせ</span>
+                <h2 class="p-contact__heading c-common-subTitle">
+                    Contact<br><span class="c-smallTitle">お問い合わせ</span>
                 </h2>
                 <ul class="p-contact__lists">
                     <li class="p-contact__item">
@@ -171,25 +183,25 @@
                 <div class="l-footer__bg">
                     <ul class="l-footer__lists l-container">
                         <li class="l-footer__item">
-                            <a href="" class="l-footer__link">TOP</a>
+                            <a href="#" class="l-footer__link">TOP</a>
                         </li>
                         <li class="l-footer__item">
-                            <a href="" class="l-footer__link">コンセプト</a>
+                            <a href="concept/" class="l-footer__link">コンセプト</a>
                         </li>
                         <li class="l-footer__item">
-                            <a href="" class="l-footer__link">アクセス</a>
+                            <a href="access/" class="l-footer__link">アクセス</a>
                         </li>
                         <li class="l-footer__item">
-                            <a href="" class="l-footer__link">プラン</a>
+                            <a href="plan/" class="l-footer__link">プラン</a>
                         </li>
                         <li class="l-footer__item">
-                            <a href="" class="l-footer__link">設備</a>
+                            <a href="equipment/" class="l-footer__link">設備</a>
                         </li>
                         <li class="l-footer__item">
-                            <a href="" class="l-footer__link">ギャラリー</a>
+                            <a href="gallery/" class="l-footer__link">ギャラリー</a>
                         </li>
                         <li class="l-footer__item">
-                            <a href="" class="l-footer__link">物件概要</a>
+                            <a href="outline/" class="l-footer__link">物件概要</a>
                         </li>
                     </ul>
                 </div>
@@ -216,6 +228,8 @@
                 <small>© 2023 MITSUIHOME CO.,LTD</small>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+        <script src="assets/js/script.js"></script>
     </body>
 
 </html>

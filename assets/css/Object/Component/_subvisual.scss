@@ -1,6 +1,10 @@
+@use "../../Global/variable" as val;
+
 .c-subVisual {
     margin-top: 100px;
+
     &__txt {
+        font-family: val.$mincho;
         color: #fff;
         font-size: 2rem;
         height: 450px;
@@ -9,6 +13,28 @@
     }
 }
 
-.c-commonTitle{
+.c-commonTitle {
     margin-bottom: 30px;
+}
+
+@media(max-width:480px) {
+    .c-commonTitle {
+        font-size: 2.5rem;
+    }
+
+    .c-subVisual {
+        margin-top: 60px;
+
+        &__txt {
+            height: 200px;
+            font-size: 1rem;
+            padding-top: 70px;
+            line-height: 30px;
+        }
+    }
+
+    .c-underTitle {
+        font-size: 1rem;
+        line-height: 35px;
+    }
 }
